@@ -28,6 +28,46 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
     <!-- Analytics Code -->
+
+    <style>
+        .floating-button-container {
+  position: fixed;  /* Fix the container to the viewport */
+  bottom: 0;         /* Position at the bottom */
+  left: 50%;         /* Center horizontally */
+  transform: translateX(-50%);  /* Adjust horizontal position */
+}
+
+.floating-button-container {
+     /* Remove default button border */
+  padding: 10px 20px;         /* Add some padding */
+  border-radius: 50%;        /* Make the button round */
+  cursor: pointer;           /* Change cursor to pointer on hover */
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 40px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.quantity-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #f5f5f5;
+}
+
+    </style>
    
 
 
@@ -36,169 +76,278 @@
 
  <nav class="navbar navbar-expand-lg bg-warning navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index_1.html"><img src="./assets/images/logo/logoipsum-327.svg" alt=""></a>
+        <a class="navbar-brand" href="index_1.html"><img src="./assets/images/logo/nyumnyum_fav.png" style="height:60px;" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mb-1">
+            <a href="partner.html" class="nav-link">Become a partner</a>
+           </li>
           
-          <li class="nav-item">
-            <a class="nav-link" href="cart.html"><i class="bi bi-basket2-fill"></i> Basket</a>
-          </li>
-          
-          <li class="nav-item me-1">
+          <li class="nav-item me-1 mb-1">
            <a href="login.html" class="btn btn-danger">Login</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mb-1">
             <a href="signup.html" class="btn btn-white">Sign-up</a>
            </li>
+           
         </ul>
         
       </div>
     </div>
   </nav>
 
-<main style="height:100%;">
+<main style="height:100vh;">
 
-   <section  style="margin-top:5rem;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card text-bg-dark mt-5 bg-dark position-relative" style="padding-top:2rem; padding-bottom:2rem; background-image:url('./assets/images/maxresdefault.jpeg'); background-size:cover; background-repeat:no-repreat;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-5"></div>
+   <section style="background-image:url('./assets/images/maxresdefault.jpeg'); background-size:cover; background-repeat:no-repeat; padding-top:9rem; padding-bottom:7rem;">
+
+    <div class="container position-absolute">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card positon-relative" style="bottom:-20%;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2 col-6">
+                                <img src="./assets/images/maxresdefault.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-10 col-6">
+                                <ul class="list-unstyled">
+                                <li class="fw-bold text-dark lh-0">Le petit villagois</li>
+                                <li><small class="text-muted lh-1">Biyem-Assi, Yaounde</li>
+                                    <li class="text-success">sfasdfasdf</small></li>
+                                </ul>
+                            </div>
                         </div>
-<div class="col-md-6">
-    <div class="card p-4 ms-4 me-4" style="margin-top:2rem;">
-       <p class="lead fw-bold">Le petit villagois</p>
-       <ul class="list-unstyled">
-        <li class="text-muted">
-           <span class="me-3">Runing promotions</span> <span class="fw-bolder">No</span>
-        </li>
-        <li class="text-muted">
-            <span class="me-3">Location</span> <span class="fw-bolder">Lac Biyem-Assi</span>
-        </li>
-        <hr>
-        <li class="d-flex">
-            <div class="me-2">Payment methods supported</div>
-            <div><span class="badge text-bg-success">Cash on delivery</span> <span class="badge text-bg-success">Pay before delivery</span> <span class="badge text-bg-success">Pay delivery first</span></div>
-        </li>
-       </ul>
-    </div>
-</div>
                     </div>
-                    </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
+     
    </section>
 
 
-   <section class="py-5">
+   <section class="py-5 mt-7">
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-3 justify-content-center">
                 <div class="col-md-8">
-                    <h2>Menu items in Le petit villagois</h2>
+                    <h4 class="mt-5">Menu items in Le petit villagois</h4>
                 </div>
             </div>
+
             <div class="row">
-               <!-- item -->
-               <div class="col-md-3">
-                <div class="card mb-3">
-                    <img src="./assets/images/maxresdefault.jpeg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h3 class="lh-1">Shawamah</h3>
-                        <p class="fw-bold text-danger lh-1">1500 FCFA</p>
-                        <p><small class="text-muted lh-1">Minimum order: 2</small></p>
-                    
-                        <button class="btn btn-danger btn-sm" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add to basket</button>
-                    </div>
-                </div>
-            </div>
-          <!-- item -->
                 <!-- item -->
-                <div class="col-md-3">
-                    <div class="card mb-3">
-                        <img src="./assets/images/maxresdefault.jpeg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h3 class="lh-1">Shawamah</h3>
-                            <p class="fw-bold text-danger lh-1">1500 FCFA</p>
-                            <p><small class="text-muted lh-1">Minimum order: 2</small></p>
-                        
-                            <button class="btn btn-danger btn-sm" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add to basket</button>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card p-2 mb-2">
+                        <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <img src="./assets/images/maxresdefault.jpeg" style="height:80px;" alt="">
+                                </div>
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li class="lh-0 text-dark fw-bold">Shawamah</li>
+                                        <li class="text-danger lh-0 fw-bolder">1500 F</li>
+                                        <li>
+                                          <ul class="list-unstyled">
+                                            <li class="list-inline-item">
+                                                <small><i class="bi bi-truck"></i></small>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <small>Min Order: 2</small>
+                                            </li>
+                                          </ul>
+                                        </li>
+            
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-              <!-- item -->
-               <!-- item -->
-               <div class="col-md-3">
-                <div class="card mb-3">
-                    <img src="./assets/images/maxresdefault.jpeg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h3 class="lh-1">Shawamah</h3>
-                        <p class="fw-bold text-danger lh-1">1500 FCFA</p>
-                        <p><small class="text-muted lh-1">Minimum order: 2</small></p>
-                    
-                        <button class="btn btn-danger btn-sm" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add to basket</button>
+                    <!-- item end -->
+                     <!-- item -->
+                  <!-- item -->
+                <div class="col-md-4">
+                    <div class="card p-2 mb-2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <img src="./assets/images/maxresdefault.jpeg" style="height:80px;" alt="">
+                                </div>
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li class="lh-0 text-dark fw-bold">Shawamah</li>
+                                        <li class="text-danger lh-0 fw-bolder">1500 F</li>
+                                        <li>
+                                          <ul class="list-unstyled">
+                                            <li class="list-inline-item">
+                                                <small><i class="bi bi-truck"></i></small>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <small>Min Order: 2</small>
+                                            </li>
+                                          </ul>
+                                        </li>
+            
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
+                    <!-- item end -->
+                     <!-- item -->
+                <div class="col-md-4">
+                    <div class="card p-2 mb-2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <img src="./assets/images/maxresdefault.jpeg" style="height:80px;" alt="">
+                                </div>
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li class="lh-0 text-dark fw-bold">Shawamah</li>
+                                        <li class="text-danger lh-0 fw-bolder">1500 F</li>
+                                        <li>
+                                          <ul class="list-unstyled">
+                                            <li class="list-inline-item">
+                                                <small><i class="bi bi-truck"></i></small>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <small>Min Order: 2</small>
+                                            </li>
+                                          </ul>
+                                        </li>
+            
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item end -->
+                     <!-- item -->
+                 <!-- item -->
+                 <div class="col-md-4">
+                    <div class="card p-2 mb-2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <img src="./assets/images/maxresdefault.jpeg" style="height:80px;" alt="">
+                                </div>
+                                <div>
+                                    <ul class="list-unstyled">
+                                        <li class="lh-0 text-dark fw-bold">Shawamah</li>
+                                        <li class="text-danger lh-0 fw-bolder">1500 F</li>
+                                        <li>
+                                          <ul class="list-unstyled">
+                                            <li class="list-inline-item">
+                                                <small><i class="bi bi-truck"></i></small>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <small>Min Order: 2</small>
+                                            </li>
+                                          </ul>
+                                        </li>
+            
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item end -->
             </div>
-          <!-- item -->
-
-          <!-- item -->
-          <div class="col-md-3">
-            <div class="card mb-3">
-                <img src="./assets/images/maxresdefault.jpeg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h3 class="lh-1">Shawamah</h3>
-                    <p class="fw-bold text-danger lh-1">1500 FCFA</p>
-                    <p><small class="text-muted lh-1">Minimum order: 2</small></p>
-                
-                    <button class="btn btn-danger btn-sm" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add to basket</button>
-                </div>
-            </div>
-        </div>
-      <!-- item -->
-
-            </div>
-
-            <!-- pagination -->
-            <div class="row mt-4 justify-content-center">
-                <div class="col-md-6">
-                    <nav aria-label="Page navigation">
-                        <ul
-                            class="pagination    "
-                        >
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active" aria-current="page">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                </div>
-            </div>
-            <!-- pagination end -->
+        
+         
 
         </div>
    </section>
 
+   <div class="floating-button-container">
+    <button class="btn btn-danger w-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Basket Items <span class="badge text-bg-secondary">4</span></button>
+  </div>
+
+  <!-- ==== offcanvas cart checkout==== -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTopLabel">Basket</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <!-- ===== item ====== -->
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Shawamah</p>
+                            <small class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ipsam!</small>
+                        </div>
+                        <div class="col-5"><img src="./assets/images/maxresdefault.jpeg" class="img-fluid" alt=""></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col">
+                            <span class="fw-bold montant" id="">1500 F</span> 
+                        </div>
+                        <div class="col">
+                            <div class="quantity-wrapper float-end">
+                                <button class="quantity-btn increase">+</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn decrease">-</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+           <!-- ===== item ====== -->
+            <!-- ===== item ====== -->
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-7">
+                            <p class="fw-bold">Delivery fee</p>
+                        </div>
+                        <div class="col-5">
+                            <div class="float-end">500 F</div>
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+           <!-- ===== item ====== -->
+           <!-- ===== item ====== -->
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-7">
+                            <p class="fw-bold">Total fee</p>
+                        </div>
+                        <div class="col-5">
+                            <div class="float-end">500 F</div>
+                          
+                        </div>
+                    </div>
+                    <button class="btn btn-danger btn-lg w-100">Checkout</button>
+                </div>
+            </div>
+        </li>
+           <!-- ===== item ====== -->
+      </ul>
+    </div>
+  </div>
+  <!-- ==== offcanvas ===== -->
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -241,23 +390,27 @@
     </div>
   </div>
 </main>
+
     <!-- Footer -->
     <footer class="py-3 bg-secondary">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-7">
                     NyumNyum
+                </div>
+                <div class="col-5 ">
+                  <ul class="list-unstyled float-end">
+                    <li class="list-inline-item me-1 text-muted"><i class="bi bi-facebook"></i></li>
+                    <li class="list-inline-item me-1 text-muted"> <i class="bi bi-snapchat"></i></li>
+                    <li class="list-inline-item me-1 text-muted"><i class="bi bi-instagram"></i></li>
+                   
+                  </ul>
                 </div>
             </div>
         </div>
         </footer>
            
-            <!-- Scroll top -->
-            <div class="btn-scroll-top">
-               <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
-                  <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"></path>
-               </svg>
-            </div>
+        
             <!-- Libs JS -->
             <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
             <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
@@ -268,6 +421,29 @@
         
             <script src="./assets/libs/scrollcue/scrollCue.min.js"></script>
             <script src="./assets/js/vendors/scrollcue.js"></script>
+            <script>
+                const quantityInput = document.querySelector('.quantity-input');
+                const montant = document.querySelector('.montant');
+                const increaseButton = document.querySelector('.quantity-btn.increase');
+                const decreaseButton = document.querySelector('.quantity-btn.decrease');
+                
+                increaseButton.addEventListener('click', () => {
+                  let quantity = parseInt(quantityInput.value);
+                  quantity++;
+                  quantityInput.value = quantity;
+                  montant.innerHTML = 1500*quantity;
+                  // Update cart logic here (refer to your e-commerce platform documentation)
+                });
+                
+                decreaseButton.addEventListener('click', () => {
+                  let quantity = parseInt(quantityInput.value);
+                  if (quantity > 1) {
+                    quantity--;
+                  }
+                  quantityInput.value = quantity;
+                  // Update cart logic here (refer to your e-commerce platform documentation)
+                });
+                </script>
          
         
         </body>
